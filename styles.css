@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.game-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.settings {
+    margin-bottom: 20px;
+}
+
+#word-display {
+    font-size: 28px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+#word-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+#word-input:focus {
+    border-color: #ff5e62;
+    box-shadow: 0 4px 8px rgba(255, 94, 98, 0.2);
+}
+
+.timer {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #ff5e62;
+}
+#word-input {
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#score {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+#result-message {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+    display: none;
+}
+
+#start-game {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff5e62;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-game:hover {
+    background-color: #e54e55;
+}

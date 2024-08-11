@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="game-title">Typing Master</h1>
+        <div class="settings">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div class="game">
+            <p id="word-display"></p>
+            <input type="text" id="word-input" placeholder="Type here..." autofocus>
+            <div class="timer">
+                <p>Time left: <span id="timer">30</span> seconds</p>
+            </div>
+            <p id="score">Score: 0</p>
+        </div>
+        <div id="result-message"></div>
+        <button id="start-game">Start Game</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
