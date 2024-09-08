@@ -40,6 +40,7 @@ const words = [
   "tails",
   "shadow",
   "knuckles",
+  "shadow",
 ];
 
 let timer;
