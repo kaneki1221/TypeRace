@@ -1,34 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Race Game</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="game-title">Typing Race</h1>
-        <div class="settings">
-            <label for="difficulty">Difficulty:</label>
-            <select id="difficulty">
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">Hard</option>
-            </select>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Typing Race Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="app-shell">
+            <header>
+                <p class="eyebrow">Arcade Mode</p>
+                <h1>TypeRace+ Mini Arcade</h1>
+                <p class="subtitle">
+                    Sharpen your skills with fast-paced typing, decoding scrambles, and reaction drills.
+                </p>
+            </header>
+
+            <section class="status-bar">
+                <div class="status-card">
+                    <p class="label">Active Game</p>
+                    <p id="active-mode" class="value">Typing Sprint</p>
+                </div>
+                <div class="status-card">
+                    <p class="label">Score</p>
+                    <p id="global-score" class="value">0</p>
+                </div>
+                <div class="status-card">
+                    <p class="label">Timer</p>
+                    <p id="global-timer" class="value">30s</p>
+                </div>
+            </section>
+
+            <section class="mode-picker">
+                <button class="mode-button active" data-mode="typing">
+                    <span>⚡ Typing Sprint</span>
+                    <small>Classic race against the clock</small>
+                </button>
+                <button class="mode-button" data-mode="scramble">
+                    <span>🧠 Word Scramble</span>
+                    <small>Unscramble heroic names</small>
+                </button>
+                <button class="mode-button" data-mode="reaction">
+                    <span>🚀 Reaction Rush</span>
+                    <small>Tap at light-speed</small>
+                </button>
+            </section>
+
+            <section class="game-panels">
+                <div id="typing-panel" class="game-panel active">
+                    <div class="panel-header">
+                        <h2>Typing Sprint</h2>
+                        <div class="settings">
+                            <label for="difficulty">Difficulty</label>
+                            <select id="difficulty">
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p id="word-display" class="word-display">Tap start to play</p>
+                    <input type="text" id="word-input" placeholder="Type here..." disabled>
+                    <div class="info-row">
+                        <p>Time left: <span id="timer">30</span>s</p>
+                        <p>Score: <span id="score">0</span></p>
+                    </div>
+                    <div id="result-message" class="result-message"></div>
+                    <button id="start-game" class="primary-btn">Start Typing Sprint</button>
+                </div>
+
+                <div id="scramble-panel" class="game-panel">
+                    <div class="panel-header">
+                        <h2>Word Scramble</h2>
+                        <p>Decode legendary characters before time runs out.</p>
+                    </div>
+                    <div class="scramble-card">
+                        <p>Scrambled Word</p>
+                        <h3 id="scrambled-word">Tap start to scramble</h3>
+                    </div>
+                    <input type="text" id="scramble-input" placeholder="Unscramble..." disabled>
+                    <div class="info-row">
+                        <p>Attempts left: <span id="scramble-attempts">3</span></p>
+                        <p>Streak: <span id="scramble-streak">0</span></p>
+                    </div>
+                    <div id="scramble-message" class="result-message"></div>
+                    <button id="scramble-start" class="primary-btn">Start Scramble</button>
+                </div>
+
+                <div id="reaction-panel" class="game-panel">
+                    <div class="panel-header">
+                        <h2>Reaction Rush</h2>
+                        <p>Click the arena as soon as it glows. Faster reactions earn more points.</p>
+                    </div>
+                    <div id="reaction-arena" class="reaction-arena">
+                        <span id="reaction-prompt">Tap start to begin</span>
+                    </div>
+                    <div class="info-row">
+                        <p>Best time: <span id="reaction-best">--</span> ms</p>
+                        <p>Last time: <span id="reaction-last">--</span> ms</p>
+                    </div>
+                    <button id="reaction-start" class="primary-btn">Start Reaction Test</button>
+                </div>
+            </section>
         </div>
-        <div class="game">
-            <p id="word-display"></p>
-            <input type="text" id="word-input" placeholder="Type here..." autofocus>
-            <div class="timer">
-                <p>Time left: <span id="timer">30</span> seconds</p>
-            </div>
-            <p id="score">Score: 0</p>
-        </div>
-        <div id="result-message"></div>
-        <button id="start-game">Start Game</button>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="script.js"></script>
-</body>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+
 </html>

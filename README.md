@@ -1,32 +1,46 @@
-# Typing Master Game
+# TypeRace+ Mini Arcade
 
-**Typing Master** is a fun and engaging word-typing game designed to test and improve your typing speed and accuracy. Players are challenged to type randomly generated words within a limited time, with the difficulty level affecting both the length of the words and the time allowed.
+TypeRace+ upgrades the original typing challenge into a neon mini-arcade with three bite-sized games designed to boost your speed, focus, and reflexes.
 
-## Game Features
+## 🎮 Game Modes
 
-- **Difficulty Levels**: Choose from Easy, Medium, or Hard to match your skill level.
-  - **Easy**: 30 seconds to start, with simpler words.
-  - **Medium**: 20 seconds to start, with moderately complex words.
-  - **Hard**: 10 seconds to start, with more challenging words.
-- **Dynamic Timer**: Successfully typing a word increases the timer, giving you more time to type the next word.
-- **Score Tracking**: Earn points for each correctly typed word. The goal is to achieve the highest score possible before the time runs out.
-- **Real-Time Feedback**: Receive immediate visual feedback for correct and incorrect inputs. Correct words are rewarded with a green border, while incorrect attempts result in a red border and a brief shake animation.
-- **Win/Lose Conditions**:
-  - **Win**: Reach a score of 10 or more points to win the game.
-  - **Lose**: If the timer runs out, you lose the game.
+### ⚡ Typing Sprint
 
-## How to Play
+- Choose Easy / Medium / Hard
+- Type legendary character names before the timer hits zero
+- Every correct word adds bonus time
+- Reach 12 points to win
 
-1. Select your desired difficulty level.
-2. Click "Start Game" to begin.
-3. Type the word displayed on the screen as quickly and accurately as possible.
-4. If you type the word correctly, you will be given a new word, and the timer will increase slightly.
-5. Continue typing words to increase your score and keep the timer going.
-6. The game ends when the timer runs out or when you reach a score of 10 (or more) points.
+### 🧠 Word Scramble
 
-## Technologies Used
+- Unscramble iconic gaming names
+- Three attempts per round
+- Build streaks for bigger scores
 
-- **HTML/CSS/JavaScript**: For structuring and styling the game, as well as managing the game logic.
-- **GSAP**: For smooth and creative animations that enhance the user experience.
+### 🚀 Reaction Rush
 
-This game is a great way to improve your typing skills while having fun. Whether you're a beginner or a seasoned typist, Typing Master offers a challenging and rewarding experience for all players!
+- Wait for the arena to glow
+- Tap instantly to log your reaction time
+- Beat your personal best to stack points
+
+## ✨ Visual Improvements
+
+- Glassmorphism interface with radial neon gradients
+- Responsive layout for desktop, tablet, and phones
+- Animated transitions powered by GSAP
+- Global status bar showing score/timer for the active mode
+- Dynamic mode switcher with contextual hints
+
+## 🛠️ Stack
+
+- **HTML** for structure
+- **Modern CSS** (glass UI, custom fonts, fluid layout)
+- **Vanilla JavaScript + GSAP** for animations and game logic
+
+## 🚀 Getting Started
+
+1. Open `index.html` in any modern browser.
+2. Pick a mode from the arcade selector.
+3. Smash the start button and chase new high scores!
+
+Feel free to expand the word list, tweak timers, or add your own mini-games — the architecture makes it easy to plug in new cards. Have fun leveling up your reflexes! 🕹️
