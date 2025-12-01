@@ -1,5 +1,7 @@
 # TypeRace+ Mini Arcade
 
+![TypeRace+ Screenshot](./screenshot.png)
+
 TypeRace+ upgrades the original typing challenge into a neon mini-arcade with three bite-sized games designed to boost your speed, focus, and reflexes.
 
 ## 🎮 Game Modes
